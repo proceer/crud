@@ -1,10 +1,10 @@
-import { Search } from "@/crud/Search";
-import { FormValidation } from "@/crud/FormValidation";
-import { DataSourceAdapter } from "@/crud/data/DataSourceAdapter";
-import { DataDestinationAdapter } from "@/crud/data/DataDestinationAdapter";
-import { FormDataHandler } from "@/crud/FormDataHandler";
-import { Sorting } from "@/crud/Sorting";
-import { Section } from "@/crud/Section";
+import { Search } from "../crud/Search";
+import { FormValidation } from "../crud/FormValidation";
+import { DataSourceAdapter } from "../crud/data/DataSourceAdapter";
+import { DataDestinationAdapter } from "../crud/data/DataDestinationAdapter";
+import { FormDataHandler } from "../crud/FormDataHandler";
+import { Sorting } from "../crud/Sorting";
+import { Section } from "../crud/Section";
 export declare class Form {
     readonly entityName: string;
     readonly title: string | undefined;

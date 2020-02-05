@@ -1,5 +1,5 @@
-import { Emit, Prop, Vue } from "vue-property-decorator";
-import { Form } from "@/crud";
+import { Emit, Prop, Vue } from 'vue-property-decorator';
+import { Form } from '../../crud';
 
 // Note, this component should not have the @Component annotation since this
 // may be used only once in the hierarchy as of 2020-01-08.
@@ -20,7 +20,7 @@ export default class BaseLayout extends Vue {
 
   @Prop({ default: false })
   loading!: boolean;
-  @Emit("update:loading")
+  @Emit('update:loading')
   emitIsLoading(value: boolean): boolean {
     return value;
   }

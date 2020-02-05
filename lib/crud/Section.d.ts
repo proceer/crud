@@ -1,4 +1,4 @@
-import { Field } from "@/crud/Field";
+import { Field } from "../crud/Field";
 export declare class Section {
     readonly title: string | undefined;
     readonly fields: Field[];

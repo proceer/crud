@@ -1,9 +1,9 @@
-import ColorPicker from '@/crud-vue-vuetify/component/ColorPicker.vue';
-import HiddenField from '@/crud-vue-vuetify/component/HiddenField.vue';
-import Paragraph from '@/crud-vue-vuetify/component/Paragraph.vue';
-import RadioButtons from '@/crud-vue-vuetify/component/RadioButtons.vue';
-import TextField from '@/crud-vue-vuetify/component/TextField.vue';
 import Vue from 'vue';
+import ColorPicker from '../crud-vue-vuetify/component/ColorPicker.vue';
+import HiddenField from '../crud-vue-vuetify/component/HiddenField.vue';
+import Paragraph from '../crud-vue-vuetify/component/Paragraph.vue';
+import RadioButtons from '../crud-vue-vuetify/component/RadioButtons.vue';
+import TextField from '../crud-vue-vuetify/component/TextField.vue';
 
 Vue.component('crud-text-field', TextField);
 Vue.component('crud-hidden-field', HiddenField);

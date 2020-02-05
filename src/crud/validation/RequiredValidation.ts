@@ -1,4 +1,4 @@
-import { Field, FieldValidation } from '@/crud';
+import { Field, FieldValidation } from '../../crud';
 
 class RequiredValidation implements FieldValidation {
   validate(field: Field, data: any): boolean {

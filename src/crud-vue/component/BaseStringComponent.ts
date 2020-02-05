@@ -1,7 +1,7 @@
-import BaseComponent from "@/crud-vue/component/BaseComponent";
+import BaseComponent from '../../crud-vue/component/BaseComponent';
 
 export default class BaseStringComponent extends BaseComponent {
-  fieldDataInternal: string = "";
+  fieldDataInternal: string = '';
 
   initialize() {
     const value = this.field.getValue(this.formData);

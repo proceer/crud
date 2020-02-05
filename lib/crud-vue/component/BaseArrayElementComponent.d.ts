@@ -1,4 +1,4 @@
-import BaseComponent from "@/crud-vue/component/BaseComponent";
+import BaseComponent from '../../crud-vue/component/BaseComponent';
 export default class BaseArrayElementComponent extends BaseComponent {
     index: number;
     arrayDataInternal: any[];

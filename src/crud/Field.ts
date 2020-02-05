@@ -1,5 +1,5 @@
-import { FieldValidation } from "@/crud/FieldValidation";
-import { AdditionalInfo } from "@/crud/additional-info/AdditionalInfo";
+import { AdditionalInfo } from '../crud/additional-info/AdditionalInfo';
+import { FieldValidation } from '../crud/FieldValidation';
 
 export class Field {
   constructor(
@@ -9,7 +9,7 @@ export class Field {
     public readonly additionalInfo: AdditionalInfo | any | undefined,
     public readonly validation: FieldValidation | undefined,
     public readonly getValue: (data: any) => any,
-    public readonly setValue: (data: any, value: any) => void
+    public readonly setValue: (data: any, value: any) => void,
   ) {}
 
   isValid(data: any): boolean {

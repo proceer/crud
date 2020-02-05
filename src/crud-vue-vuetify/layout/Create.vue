@@ -1,6 +1,6 @@
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import BaseLayout from "@/crud-vue/layout/BaseLayout";
+import { Component } from 'vue-property-decorator';
+import BaseLayout from '../../crud-vue/layout/BaseLayout';
 
 @Component
 export default class Create extends BaseLayout {
@@ -11,12 +11,12 @@ export default class Create extends BaseLayout {
     this.emitIsLoading(true);
     const result: any | undefined = await this.form.data.save(
       this.form.data.addFormData,
-      true
+      true,
     );
     this.emitIsLoading(false);
 
     // Notify the parent
-    this.$emit("after-submit", result);
+    this.$emit('after-submit', result);
   }
 }
 </script>
@@ -52,7 +52,7 @@ export default class Create extends BaseLayout {
         <template v-else>
           <component
             v-for="field in form.sections.flatMap(
-              previousValue => previousValue.fields
+              previousValue => previousValue.fields,
             )"
             :key="field.fieldId"
             :is="field.type"

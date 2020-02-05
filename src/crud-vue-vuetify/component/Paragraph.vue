@@ -1,6 +1,6 @@
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import BaseComponent from "@/crud-vue/component/BaseComponent";
+import { Component } from 'vue-property-decorator';
+import BaseComponent from '../../crud-vue/component/BaseComponent';
 
 @Component
 export default class Paragraph extends BaseComponent {}

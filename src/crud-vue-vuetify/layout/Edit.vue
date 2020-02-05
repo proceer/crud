@@ -1,11 +1,8 @@
 <script lang="ts">
-import { Component, Prop } from "vue-property-decorator";
-import BaseLayout from "@/crud-vue/layout/BaseLayout";
-import LoadingIndicator from "@/feature/shared/component/LoadingIndicator.vue";
+import { Component, Prop } from 'vue-property-decorator';
+import BaseLayout from '../../crud-vue/layout/BaseLayout';
 
-@Component({
-  components: { LoadingIndicator }
-})
+@Component
 export default class Edit extends BaseLayout {
   @Prop()
   id!: string;
@@ -26,12 +23,12 @@ export default class Edit extends BaseLayout {
     this.emitIsLoading(true);
     const result: any | undefined = await this.form.data.save(
       this.formData,
-      false
+      false,
     );
     this.emitIsLoading(false);
 
     // Notify the parent
-    this.$emit("after-submit", result);
+    this.$emit('after-submit', result);
   }
 }
 </script>
@@ -68,7 +65,7 @@ export default class Edit extends BaseLayout {
           <template v-else>
             <component
               v-for="(field, i) in form.sections.flatMap(
-                previousValue => previousValue.fields
+                previousValue => previousValue.fields,
               )"
               :key="i"
               :is="field.type"

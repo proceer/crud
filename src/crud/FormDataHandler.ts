@@ -1,5 +1,5 @@
-import { DataDestinationAdapter } from '@/crud/data/DataDestinationAdapter';
-import { DataSourceAdapter } from '@/crud/data/DataSourceAdapter';
+import { DataDestinationAdapter } from '../crud/data/DataDestinationAdapter';
+import { DataSourceAdapter } from '../crud/data/DataSourceAdapter';
 
 export class FormDataHandler {
   private readonly dataInternal: Map<string, any>;

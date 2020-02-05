@@ -1,6 +1,6 @@
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import BaseStringComponent from "@/crud-vue/component/BaseStringComponent";
+import { Component } from 'vue-property-decorator';
+import BaseStringComponent from '../../crud-vue/component/BaseStringComponent';
 
 @Component
 export default class RadioButtons extends BaseStringComponent {

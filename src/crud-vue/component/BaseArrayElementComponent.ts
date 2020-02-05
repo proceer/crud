@@ -1,5 +1,5 @@
-import { Prop } from "vue-property-decorator";
-import BaseComponent from "@/crud-vue/component/BaseComponent";
+import { Prop } from 'vue-property-decorator';
+import BaseComponent from '../../crud-vue/component/BaseComponent';
 
 export default class BaseArrayElementComponent extends BaseComponent {
   @Prop()
@@ -9,10 +9,10 @@ export default class BaseArrayElementComponent extends BaseComponent {
   arrayDataInternal!: any[];
 
   updateRow(row: any) {
-    this.$emit("update-row", this.index, row);
+    this.$emit('update-row', this.index, row);
   }
 
   deleteRow() {
-    this.$emit("delete-row", this.index);
+    this.$emit('delete-row', this.index);
   }
 }

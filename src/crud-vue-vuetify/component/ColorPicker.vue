@@ -1,6 +1,6 @@
 <script lang="ts">
-import { Component } from "vue-property-decorator";
-import BaseStringComponent from "@/crud-vue/component/BaseStringComponent";
+import { Component } from 'vue-property-decorator';
+import BaseStringComponent from '../../crud-vue/component/BaseStringComponent';
 
 @Component
 export default class ColorPicker extends BaseStringComponent {
@@ -8,7 +8,7 @@ export default class ColorPicker extends BaseStringComponent {
 
   mounted() {
     this.initialize();
-    if (!this.fieldData) this.fieldData = "#000000FF";
+    if (!this.fieldData) this.fieldData = '#000000FF';
   }
 }
 </script>
@@ -47,7 +47,7 @@ export default class ColorPicker extends BaseStringComponent {
                 :class="[
                   'picker-activator',
                   { active: showPicker },
-                  'elevation-3'
+                  'elevation-3',
                 ]"
                 :style="{ backgroundColor: fieldData }"
               />

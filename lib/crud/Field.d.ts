@@ -1,5 +1,5 @@
-import { FieldValidation } from "@/crud/FieldValidation";
-import { AdditionalInfo } from "@/crud/additional-info/AdditionalInfo";
+import { AdditionalInfo } from '../crud/additional-info/AdditionalInfo';
+import { FieldValidation } from '../crud/FieldValidation';
 export declare class Field {
     readonly title: string | undefined;
     readonly tooltip: string | undefined;

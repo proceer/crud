@@ -1,10 +1,10 @@
 <script lang="ts">
-import { Component, Emit, Model, Prop } from "vue-property-decorator";
-import BaseLayout from "@/crud-vue/layout/BaseLayout";
+import { Component, Emit, Model, Prop } from 'vue-property-decorator';
+import BaseLayout from '../../crud-vue/layout/BaseLayout';
 
 @Component
 export default class List extends BaseLayout {
-  @Prop({ default: "" })
+  @Prop({ default: '' })
   search!: string;
 
   allData: any[] = [];
@@ -14,7 +14,7 @@ export default class List extends BaseLayout {
   }
   // noinspection JSUnusedGlobalSymbols
   set searchInternal(v: string) {
-    this.$emit("update:search", v);
+    this.$emit('update:search', v);
   }
 
   // noinspection JSUnusedGlobalSymbols
@@ -29,7 +29,7 @@ export default class List extends BaseLayout {
       .flatMap(value => value.fields)
       .map((value, i) => ({
         text: value.title,
-        value: i
+        value: i,
       }));
   }
 }
