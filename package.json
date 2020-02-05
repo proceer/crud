@@ -1,9 +1,9 @@
 {
-  "name": "crud",
-  "version": "0.0.1",
+  "name": "proceer-crud",
+  "version": "0.0.2",
   "description": "",
   "files": [
-    "src/**/*"
+    "lib/**/*"
   ],
   "scripts": {
     "build": "tsc"
