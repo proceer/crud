@@ -1,0 +1,41 @@
+{
+  "name": "crud",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "src/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/proceer/crud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/proceer/crud/issues"
+  },
+  "homepage": "https://github.com/proceer/crud#readme",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "reflect-metadata": "^0.1.13",
+    "validator": "^12.2.0",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.2",
+    "vue-property-decorator": "^8.4.0",
+    "vuetify": "^2.2.9"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.1",
+    "ts-loader": "^6.2.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5",
+    "vue-cli-plugin-vuetify": "^2.0.4",
+    "vue-loader": "^15.8.3",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
